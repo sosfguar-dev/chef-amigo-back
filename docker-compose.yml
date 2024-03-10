@@ -16,23 +16,3 @@ services:
       interval: 5s
       timeout: 5s
       retries: 3
-
-  chef:
-    container_name: chef
-    env_file:
-      - local.env
-    environment:
-      - DATABASE_HOST=host.docker.internal
-    build:
-      context: ./
-      dockerfile: ./Dockerfile
-    entrypoint:
-      - /bin/sh
-    command: -c "npm run start:dev"
-    ports:
-      - '3000:3000'
-    volumes:
-      - './:/src'
-    depends_on:
-      chef-db:
-        condition: service_healthy
