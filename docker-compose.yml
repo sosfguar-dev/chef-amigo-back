@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  chef-db:
+    image: mysql:8.0
+    container_name: chef-db
+    restart: always
+    environment:
+      MYSQL_USER: '${DATABASE_USERNAME}'
+      MYSQL_PASSWORD: '${DATABASE_PASSWORD}'
+      MYSQL_DATABASE: '${DATABASE_NAME}'
+      MYSQL_RANDOM_ROOT_PASSWORD: 'yes'
+    volumes:
+      - commis-data:/var/lib/mysql
+    healthcheck:
+      test: 'mysqladmin ping -h localhost'
+      interval: 5s
+      timeout: 5s
+      retries: 3
