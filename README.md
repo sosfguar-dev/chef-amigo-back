@@ -7,6 +7,8 @@ This repository hosts the backend of the "ChefAmigo" application. It handles bus
 ```bash
 git clone https://github.com/sosfguar-dev/chef-amigo-back.git
 ```
+![driagramming C4](https://github.com/sosfguar-dev/chef-amigo-back/assets/81993782/19c01322-b43b-452a-acf7-5504f4700c9a)
+
 ## Commands Projects
 - The following commands are necessary for the project to work.
 
@@ -24,3 +26,4 @@ git clone https://github.com/sosfguar-dev/chef-amigo-back.git
 - ts - TypeScript
 
 ## Project Architecture
+![repository](https://github.com/sosfguar-dev/chef-amigo-back/assets/81993782/b77c0e9f-d84e-4a9a-87fa-9de5cbde8a4a)
