@@ -21,6 +21,6 @@ git clone https://github.com/sosfguar-dev/chef-amigo-back.git
 
 ## Technologies used
 - Nest.js
-- TypeScript
+- ts - TypeScript
 
 ## Project Architecture

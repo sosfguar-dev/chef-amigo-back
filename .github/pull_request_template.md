@@ -25,4 +25,3 @@ What kind of change does this PR introduce?
 - This change correspond to ticket [CHEF-XX](https://ejemplo.com/modulo-x).
 
 ## Screenshots
-- N/A
