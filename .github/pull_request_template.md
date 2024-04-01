@@ -4,18 +4,6 @@
 ## Why Is This Feature/Fix Necessary?
 - Please provide a short description of why it is necessary.
 
-## PR Type
-What kind of change does this PR introduce?
-
-- [] fix
-- [] Feature
-- [] Code style update
-- [] Refactoring
-- [] CI related changes
-- [] Documentation content changes
-- [] Tests
-- [] Other
-
 ## Checklist
 - [] I've performed a review of my code
 - [] If it is a core feature, I have added unit tests
