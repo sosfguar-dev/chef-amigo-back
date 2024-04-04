@@ -1,0 +1,38 @@
+name: test CI
+
+on:
+    push:
+      branches: [ "main" ]
+
+    pull_request:
+      branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        my-custom-node-version: [20.11.1]
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.my-custom-node-version }}
+        cache: 'npm'
+
+    - name: Install dependencies
+      run: npm install
+    
+    - name: Run CI
+      run: npm ci
+
+    - name: Build the project
+      run: npm run build
+
+    - name: Run tests
+      run: npm test
