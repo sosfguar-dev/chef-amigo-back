@@ -10,7 +10,7 @@
 - [] This change requires a documentation update.
 
 ## Link To The Ticket Jira
-- This change correspond to ticket [CHEF-XX](https://ejemplo.com/modulo-x).
+- This change correspond to ticket [CHEF-XX](https://example.com/).
 
 ## Screenshots
 N/A
